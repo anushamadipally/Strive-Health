@@ -1,0 +1,27 @@
+
+
+.container{
+   background-color: rgb(236, 240, 240);          
+}
+.card{
+   height: 90vh;           
+}
+.img-fluid{
+height: 89.8vh;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border-top-left-radius: 5px;
+}
+.form-outline{
+             font-weight: bold;
+}
+
+.form-control::placeholder {
+              font-size: 13px; 
+} */
+
+
+ .form-check-input,
+.form-check-label {
+  font-weight: 600 !important;
+} 
