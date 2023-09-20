@@ -1,0 +1,21 @@
+
+.mat-form-field{
+              width: 100% !important;
+}
+.form-group{
+font-size: 100;
+font-weight: bold;
+color: rgb(46, 45, 45);
+margin-left: 20px;
+
+}
+h1{
+              text-align: center;
+              font-size: 150;
+}
+.form-control{
+border: solid rgb(184, 182, 182) 2px;
+width: 70%;
+margin-left: 45px;
+
+}

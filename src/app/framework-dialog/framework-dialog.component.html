@@ -1,0 +1,120 @@
+
+<div class="dialog mb-10px">
+<h1 mat-dialog-title>Frame-Work Management</h1>
+
+<form [formGroup]="myForm" (ngSubmit)="addusers()">
+<div mat-dialog-content>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Name" formControlName="fw_name">
+    </div>
+  </div>
+
+    
+  <div class="form-group row mt-4">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">ID</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="exampleFormControlSelect1" formControlName="fw_type_id">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+   
+  <div class="form-group row mt-4">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Category</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="exampleFormControlSelect1" formControlName="fw_category">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+
+
+  <div class="form-group row mt-4">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Owner Id</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="exampleFormControlSelect1" formControlName="fw_owner_id">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row mt-4">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Model</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="exampleFormControlSelect1" formControlName="fw_model">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+
+  <div class="form-group row mt-4">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Modules</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="exampleFormControlSelect1" formControlName="modules_mandatory">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row mt-4">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Icon</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="exampleFormControlSelect1" formControlName="modules_optional">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+  
+
+  <div class="form-group row mt-4">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Duration</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Duration" formControlName="fw_icon">
+    </div>
+  </div>
+  <div class="form-group row mt-4">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Owner Type</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="owner type" formControlName="fw_duration">
+    </div>
+  </div>
+
+
+
+  <div class="d-grid gap-2 col-8 mt-4 mx-auto">
+    <button class="btn btn-success" type="submit">Login</button>
+
+  </div>
+
+ </div>
+ </form>
+ </div>

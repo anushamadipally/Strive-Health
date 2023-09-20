@@ -1,1 +1,42 @@
-<p>frameworkmanagement works!</p>
+<div class="container-fluid mt-5">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-4 col-md-6 col-8 p-0">
+      <div class="input-group">
+          <div class="input-group-append">
+              <button class="btn btn-outline-btn-lg search-btn" type="button"><i class="fa fa-search"></i></button>
+          </div>
+          <input type="text" class="form-control input-text" placeholder=" Search products...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+      </div>
+  </div>
+  
+    <div class="col-md-auto col-2 p-0">
+      <div class="buttongo" >
+        <button type="button" class="btn btn-success">Go</button>
+            
+      </div>
+    </div>
+    <div class="col col-lg-1 col-1 p-0">
+      <div class="right-button ">
+      
+        <button type="button" class="add-button" (click)="openDialog()" >+</button>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <div class="row g-0 p-2">
+    <div class="col-sm-4 p-1" *ngFor="let user of card">
+      <div class="card">
+         <div class="card-body">
+           <p>id: {{user.id}}</p>
+          <p>fw_name: {{user.fw_name }}</p>
+          <p>fw_icon:<img [src]="getIconUrl()" alt="Icon"></p>
+         <p>fw_model:{{user.fw_model}}</p>
+          <p>type_name:{{user.type_name}}</p>
+          <p>fw_duration:{{user.fw_duration}}</p>
+          <p>no_of_stages:{{user.no_of_stages}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+

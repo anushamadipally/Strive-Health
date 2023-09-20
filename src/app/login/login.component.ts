@@ -21,11 +21,11 @@ export class LoginComponent implements OnInit  {
   }
 
   login() {
-    const url = 'http://165.22.209.57:8500/api/dashboard/admin/doctor';
+    const url = 'http://165.22.209.57:8500/api/dashboard/admin';
     const headers = new HttpHeaders({
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      "token": "174|Ms3Ps1XsFBpINFOTA1XyiB0oUpAX6zx6BPqTMQxTb9795326",
+      // "token": "273|2i8cZsFfKteEupsV1hJO409UvqZzlZqRRjdbYlXW3759665f",
     });
 
     const body = {
@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit  {
 
 this.http.post(url, body, { headers }).subscribe(
   (response: any) => {
-    console.log('Response:', response); // Add this line for debugging
+    console.log('Response:', response);
     if (response.status === true) {
       // Store the token in session storage
       sessionStorage.setItem('token', response.data[0].token);

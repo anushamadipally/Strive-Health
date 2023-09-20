@@ -25,8 +25,11 @@ import { PoliciesComponent } from './policies/policies.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { ConfigComponent } from './config/config.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import {MatDialogModule} from '@angular/material/dialog';
 import { HttpClient } from '@angular/common/http';
+import { FrameworkDialogComponent } from './framework-dialog/framework-dialog.component';
+import {MatSelectModule} from '@angular/material/select';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +43,7 @@ import { HttpClient } from '@angular/common/http';
     PoliciesComponent,
     AnalyticsComponent,
     ConfigComponent,
+    FrameworkDialogComponent,
   
   ],
   imports: [
@@ -57,6 +61,8 @@ import { HttpClient } from '@angular/common/http';
     MatSidenavModule,
     MatListModule,
     HttpClientModule,
+    MatDialogModule,
+    MatSelectModule
    
   ],
   providers: [],

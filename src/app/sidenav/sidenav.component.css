@@ -49,4 +49,6 @@ a.active {
   width: 35%;
   text-align: center !important;
 }
-
+.mat-drawer-content{
+display: block;
+}

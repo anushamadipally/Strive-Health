@@ -12,7 +12,7 @@ import { ConfigComponent } from './config/config.component';
 import { UsermanagementComponent } from './usermanagement/usermanagement.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'',redirectTo:'sidenav',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'sidenav',component:SidenavComponent,children:[
     {path:'',redirectTo:'usermanagement',pathMatch:'full'},
